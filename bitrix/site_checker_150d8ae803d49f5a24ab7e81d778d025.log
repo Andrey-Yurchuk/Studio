@@ -1,0 +1,211 @@
+2023-Sep-25 08:37:13 Наличие необходимых модулей php (check_php_modules): Fail
+Ошибка! Не установлены требуемые расширения:Поддержка XML
+2023-Sep-25 08:37:13 Обязательные параметры PHP (check_php_settings): Fail
+Ошибка! Значение max_input_vars должно быть не ниже 10000. Текущее значение: 1000
+2023-Sep-25 08:37:13 Модули веб-сервера (check_security): Ok
+Конфликтов не выявлено
+2023-Sep-25 08:37:13 Значения переменных сервера (check_server_vars): Ok
+Корректные
+2023-Sep-25 08:37:13 Сохранение сессии (check_session): Ok
+50% done
+2023-Sep-25 08:37:13 Сохранение сессии (check_session): Ok
+Успешно
+2023-Sep-25 08:37:13 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
+Правильные. Сайт работает в UTF кодировке
+2023-Sep-25 08:37:13 Служебные скрипты в корне сайта (check_install_scripts): Ok
+Отсутствуют
+2023-Sep-25 08:37:13 Работа с сокетами (check_socket): Ok
+Connection to localhost:80	Success
+
+Успешно
+2023-Sep-25 08:37:13 Выполнение агентов на cron (check_bx_crontab): Warning
+Замечание. Агенты выполняются на хитах, рекомендуется перевести выполнение агентов на cron
+2023-Sep-25 08:37:13 Параметры подключения к базе данных (check_dbconn_settings): Ok
+Успешно
+2023-Sep-25 08:37:13 Лишний вывод в файлах конфигурации (check_dbconn): Ok
+Connection to localhost:80	Success
+
+Успешно
+2023-Sep-25 08:37:13 Сохранение сессии без UserAgent (check_session_ua): Ok
+50% done
+Connection to localhost:80	Success
+
+2023-Sep-25 08:37:13 Сохранение сессии без UserAgent (check_session_ua): Ok
+Connection to localhost:80	Success
+
+Успешно
+2023-Sep-25 08:37:13 Настройки сайтов (check_sites): Ok
+Правильные
+2023-Sep-25 08:37:13 Размер стека и pcre.recursion_limit (check_pcre_recursion): Ok
+Connection to localhost:80	Success
+
+Успешно
+2023-Sep-25 08:37:13 Загрузка файла (check_upload): Ok
+Connection to localhost:80	Success
+
+Успешно
+2023-Sep-25 08:37:13 Загрузка файла больше 4Мб (check_upload_big): Fail
+Connection to localhost:80	Success
+== Request ==
+POST /bitrix/admin/site_checker.php?test_type=upload_test&unique_id=493861bbd2fd10533816ed2502807e48&big=1&raw=0 HTTP/1.1
+Host: localhost
+Content-Type: multipart/form-data; boundary=--------957b100586068838eabbe75eb9e97750
+Content-Length: 4200195
+
+----------957b100586068838eabbe75eb9e97750
+Content-Disposition: form-data; name="test_file"; filename="site_checker.bin
+Content-Type: image/gif
+
+()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~����������������������������������������������������������������������������������������������������������������()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~����������������������������������������������������������������������������������������������������������������()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~�������������������������������������������������������������������������������������������������������������� ... (4200448 bytes)
+== Response ==
+HTTP/1.1 200 OK
+Date: Mon, 25 Sep 2023 05:37:13 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Vary: Accept-Encoding
+Content-Length: 316
+Content-Type: text/html; charset=UTF-8
+
+== Body ==
+move_uploaded_file(,/var/www/html/bitrix/tmp/site_checker.bin)=false
+$_FILES=
+Array
+(
+    [test_file] => Array
+        (
+            [name] => site_checker.bin
+            [full_path] => site_checker.bin
+            [type] => 
+            [tmp_name] => 
+            [error] => 1
+            [size] => 0
+        )
+
+)
+
+==========
+
+Ошибка! Не работает
+2023-Sep-25 08:37:13 Загрузка файла через php://input (check_upload_raw): Ok
+Connection to localhost:80	Success
+
+Успешно
+2023-Sep-25 08:37:13 Передача POST запроса с большим числом параметров (check_post): Ok
+Connection to localhost:80	Success
+
+Успешно
+2023-Sep-25 08:37:13 Отправка почты (check_mail): Fail
+Ошибка! Не работает
+2023-Sep-25 08:37:13 Отправка почтового сообщения больше 64Кб (check_mail_big): Fail
+Ошибка! Не работает
+2023-Sep-25 08:37:13 Проверка на наличие неотправленных сообщений (check_mail_b_event): Ok
+Успешно
+2023-Sep-25 08:37:13 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Ok
+50% done
+Connection to localhost:80	Success
+
+2023-Sep-25 08:37:13 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Ok
+Connection to localhost:80	Success
+
+Успешно
+2023-Sep-25 08:37:13 Фактическое ограничение памяти (check_memory_limit): Ok
+20% done
+Connection to localhost:80	Success
+
+2023-Sep-25 08:37:13 Фактическое ограничение памяти (check_memory_limit): Ok
+40% done
+Connection to localhost:80	Success
+
+2023-Sep-25 08:37:13 Фактическое ограничение памяти (check_memory_limit): Ok
+60% done
+Connection to localhost:80	Success
+
+2023-Sep-25 08:37:13 Фактическое ограничение памяти (check_memory_limit): Ok
+80% done
+Connection to localhost:80	Success
+
+2023-Sep-25 08:37:14 Фактическое ограничение памяти (check_memory_limit): Ok
+Connection to localhost:80	Success
+
+Не менее 256 М
+2023-Sep-25 08:37:14 Работа с файлами кеша (check_cache): Ok
+Успешно
+2023-Sep-25 08:37:14 Доступ к серверу обновлений (check_update): Ok
+Успешно
+2023-Sep-25 08:37:14 HTTP авторизация (check_http_auth): Ok
+Connection to localhost:80	Success
+
+Успешно
+2023-Sep-25 08:37:14 Создание и запуск файла (check_exec): Ok
+Connection to localhost:80	Success
+
+Успешно
+2023-Sep-25 08:37:14 Функция getimagesize для swf (check_getimagesize): Ok
+Успешно
+2023-Sep-25 08:37:14 Версия MySQL-сервера (check_mysql_bug_version): Ok
+Успешно
+2023-Sep-25 08:37:15 Время на БД и веб-сервере (check_mysql_time): Ok
+Успешно
+2023-Sep-25 08:37:15 Режим работы MySQL (check_mysql_mode): Fail
+Ошибка! innodb_strict_mode=ON, требуется OFF
+2023-Sep-25 08:37:15 Кодировка соединения (check_mysql_connection_charset): Ok
+character_set_connection=utf8, collation_connection=utf8_unicode_ci, character_set_results=utf8
+Успешно
+2023-Sep-25 08:37:15 Кодировка базы данных (check_mysql_db_charset): Ok
+CHARSET=utf8mb3, COLLATION=utf8mb3_unicode_ci
+Успешно
+2023-Sep-25 08:37:15 Кодировки таблиц в БД (check_mysql_table_charset): Ok
+Успешно
+2023-Sep-25 08:37:16 Структура базы данных (check_mysql_table_structure): Ok
+0% done
+2023-Sep-25 08:37:17 Структура базы данных (check_mysql_table_structure): Ok
+3% done
+2023-Sep-25 08:37:18 Структура базы данных (check_mysql_table_structure): Ok
+7% done
+2023-Sep-25 08:37:19 Структура базы данных (check_mysql_table_structure): Ok
+11% done
+2023-Sep-25 08:37:20 Структура базы данных (check_mysql_table_structure): Ok
+15% done
+2023-Sep-25 08:37:24 Структура базы данных (check_mysql_table_structure): Ok
+19% done
+2023-Sep-25 08:37:25 Структура базы данных (check_mysql_table_structure): Ok
+23% done
+2023-Sep-25 08:37:25 Структура базы данных (check_mysql_table_structure): Ok
+26% done
+2023-Sep-25 08:37:27 Структура базы данных (check_mysql_table_structure): Ok
+30% done
+2023-Sep-25 08:37:29 Структура базы данных (check_mysql_table_structure): Ok
+34% done
+2023-Sep-25 08:37:31 Структура базы данных (check_mysql_table_structure): Ok
+38% done
+2023-Sep-25 08:37:34 Структура базы данных (check_mysql_table_structure): Ok
+42% done
+2023-Sep-25 08:37:37 Структура базы данных (check_mysql_table_structure): Ok
+46% done
+2023-Sep-25 08:37:37 Структура базы данных (check_mysql_table_structure): Ok
+50% done
+2023-Sep-25 08:37:37 Структура базы данных (check_mysql_table_structure): Ok
+53% done
+2023-Sep-25 08:37:37 Структура базы данных (check_mysql_table_structure): Ok
+57% done
+2023-Sep-25 08:37:38 Структура базы данных (check_mysql_table_structure): Ok
+61% done
+2023-Sep-25 08:37:40 Структура базы данных (check_mysql_table_structure): Ok
+65% done
+2023-Sep-25 08:37:52 Структура базы данных (check_mysql_table_structure): Ok
+69% done
+2023-Sep-25 08:37:52 Структура базы данных (check_mysql_table_structure): Ok
+73% done
+2023-Sep-25 08:37:53 Структура базы данных (check_mysql_table_structure): Ok
+76% done
+2023-Sep-25 08:37:54 Структура базы данных (check_mysql_table_structure): Ok
+80% done
+2023-Sep-25 08:37:54 Структура базы данных (check_mysql_table_structure): Ok
+84% done
+2023-Sep-25 08:37:55 Структура базы данных (check_mysql_table_structure): Ok
+88% done
+2023-Sep-25 08:37:56 Структура базы данных (check_mysql_table_structure): Ok
+92% done
+2023-Sep-25 08:37:58 Структура базы данных (check_mysql_table_structure): Ok
+96% done
+2023-Sep-25 08:37:58 Структура базы данных (check_mysql_table_structure): Ok
+Успешно
